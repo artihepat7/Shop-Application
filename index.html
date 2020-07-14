@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css">
+    <title>Shopping Application</title>
+  </head>
+  <body>
+    <section class="header">
+      <h1>My Shop</h1>
+    </section>
+    <section id="shop-control">
+      <form id="new-product">
+        <div class="form-control">
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+        </div>
+        <div class="form-control">
+          <label for="price">Price</label>
+          <input type="number" min="0" step="1" id="price" />
+        </div>
+        <button type="submit" id="submit-btn">Add Products</button>
+      </form>
+    </section>
+
+    <ul id="product-list"></ul>
+   
+    <script src="assets/scripts/app.js"></script>
+   
+    
+  </body>
+</html>
