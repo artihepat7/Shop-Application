@@ -1,61 +1,62 @@
 body {
-  font-family: sans-serif;
-  background-color: lightgray;
-}
-.header {
-  display: flex;
-  justify-content: center;
-  background: #b6004c;
-  margin: 1rem 0;
-  color: white;
-}
-label,
-input {
-  display: block;
-  width: 100%;
-}
-label {
-  font-weight: bold;
-}
-input {
-  font: inherit;
-
-  border: 1px solid #ccc;
-  margin: 0.5rem 0;
-}
-
-input:focus {
-  background: #e2e2e2;
-}
-
-#shop-control {
-  border: 1px solid #b6004c;
-  margin: 3rem auto 0 auto;
-  padding: 0.5rem;
-  width: 40rem;
-}
-
-button {
-  padding: 0.5rem 0.7rem;
-  border: 1px solid #4e0097;
-  background: #4e0097;
-  color: white;
-}
-
-#product-list {
-  border: 1px solid #b6004c;
-  list-style: none;
-  margin: 3rem auto;
-  width: 40rem;
-  padding: 0.5rem;
-}
-#product-list li {
-  margin: 1rem 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  border-radius: 6px;
-  padding: 0.3rem;
-}
-#product-list h2 {
-  font-size: 1.5rem;
-  margin: 0 0 0.5rem 0;
-}
+    font-family: sans-serif;
+    background-color: lightgray;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    background: #b6004c;
+    margin: 1rem 0;
+    color: white;
+  }
+  label,
+  input {
+    display: block;
+    width: 100%;
+  }
+  label {
+    font-weight: bold;
+  }
+  input {
+    font: inherit;
+  
+    border: 1px solid #ccc;
+    margin: 0.5rem 0;
+  }
+  
+  input:focus {
+    background: #e2e2e2;
+  }
+  
+  #shop-control {
+    border: 1px solid #b6004c;
+    margin: 3rem auto 0 auto;
+    padding: 0.5rem;
+    width: 40rem;
+  }
+  
+  button {
+    padding: 0.5rem 0.7rem;
+    border: 1px solid #4e0097;
+    background: #4e0097;
+    color: white;
+  }
+  
+  #product-list {
+    border: 1px solid #b6004c;
+    list-style: none;
+    margin: 3rem auto;
+    width: 40rem;
+    padding: 0.5rem;
+  }
+  #product-list li {
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    padding: 0.3rem;
+  }
+  #product-list h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+  }
+  
