@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.css" />
     <title>Shopping Application</title>
   </head>
   <body>
-    <section class="header">
-      <h1>My Shop</h1>
+    <section class="main-container">
+      <div class="logo-container container">
+        <h1>My Shop</h1>
+      </div>
+      <div class="button-container container">
+        <button id="show-cart-btn">Cart</button>
+      </div>
     </section>
+
     <section id="shop-control">
       <form id="new-product">
         <div class="form-control">
@@ -23,11 +29,12 @@
         <button type="submit" id="submit-btn">Add Products</button>
       </form>
     </section>
-
-    <ul id="product-list"></ul>
-   
-    <script src="assets/scripts/app.js"></script>
-   
+<div id="product-list-div">
+  <ul id="product-list"></ul>
+</div>
     
+    <div id="cart-print"></div>
+
+    <script src="assets/scripts/app.js"></script>
   </body>
 </html>

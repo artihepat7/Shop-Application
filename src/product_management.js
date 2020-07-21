@@ -1,7 +1,6 @@
-import { title } from "process";
 import { rendering } from "./rendering";
 
-export const products = [
+export let products = [
   {
     id: new Date("1/1/1970").toString(),
     title: "A Book",
@@ -36,6 +35,10 @@ export function addProduct(event) {
 
   const Title = titleEl.value;
   const Price = priceEl.value;
+  if (Title.trim().length === 0 || Price.trim().length === 0) {
+    alert("please enter valid details!");
+    return;
+  }
 
   const newProduct = {
     id: new Date().toString(),
@@ -47,3 +50,28 @@ export function addProduct(event) {
   rendering(products);
 }
 
+export function deleteProduct(prodid) {
+  let updatedProducts = [];
+  console.log(prodid);
+  products.forEach((element) => {
+    if (element.id !== prodid) {
+      updatedProducts.push(element);
+    }
+  });
+  products = updatedProducts;
+  console.log(products);
+  rendering(updatedProducts);
+
+  //another approach to delete the product
+
+  // let index = 0;
+  // products.forEach((element) => {
+  //   console.log(element);
+  //   if (element.id === prodid) {
+  //     products.splice(index, 1);
+  //   }
+  //   index++;
+  // });
+  // console.log(products);
+  // rendering(products);
+}
